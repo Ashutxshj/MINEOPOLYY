@@ -1,4 +1,5 @@
 # Mineopoly
+https://mineopolyy.onrender.com/?lobby=22SO
 
 Mineopoly is a real-time multiplayer territory game built with FastAPI, WebSockets, and a browser canvas frontend.
 
