@@ -23,7 +23,7 @@ from redis_client import (
     spectator_count,
 )
 
-app = FastAPI(title="GridWar")
+app = FastAPI(title="MINEOPOLYY")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_INDEX = os.path.join(BASE_DIR, "static", "index.html")

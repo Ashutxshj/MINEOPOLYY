@@ -181,6 +181,35 @@
       grid-template-columns: repeat(3, minmax(140px, 1fr));
     }
 
+    .info-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.03);
+      display: grid;
+      gap: 10px;
+    }
+
+    .info-title {
+      font-family: var(--display);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 8px;
+      padding-left: 18px;
+      color: #d7dbf4;
+      font-size: 0.84rem;
+      line-height: 1.45;
+    }
+
+    .info-list strong {
+      color: #ffffff;
+    }
+
     .map-card {
       border: 1px solid var(--border);
       border-radius: 12px;
@@ -752,6 +781,18 @@
     <div class="panel">
       <h2 class="heading" style="font-size:2rem;">Create Lobby</h2>
       <p class="subheading">Choose a map and start a 4-player lobby.</p>
+      <div class="info-card">
+        <div class="info-title">How To Play</div>
+        <ol class="info-list">
+          <li><strong>Create the lobby</strong> and copy the share link for your friends.</li>
+          <li><strong>First 4 players</strong> become active players. Anyone after that joins as a spectator.</li>
+          <li><strong>All 4 players must press Ready Up</strong> before the match countdown starts.</li>
+          <li><strong>Click empty cells</strong> to claim territory once the game begins.</li>
+          <li><strong>Drag to pan</strong> and use the mouse wheel or trackpad to zoom around the board.</li>
+          <li><strong>Watch for hidden mines</strong>; hitting one wipes a 3x3 area and opens those cells again.</li>
+          <li><strong>Highest score at the end of the timer wins</strong>, with score based on owned territory.</li>
+        </ol>
+      </div>
       <div id="map-cards" class="map-grid"></div>
       <div class="row">
         <button id="btn-create-lobby" class="grow">Create Lobby</button>
